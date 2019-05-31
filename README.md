@@ -1,4 +1,5 @@
 # Compilar projeto
 
 - cd my-app
-- run: npm start
+- npm install
+- npm start
