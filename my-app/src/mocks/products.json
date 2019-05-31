@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Camiseta Mescla",
+    "image": "/images/img_2.png",
+    "price": 28,
+    "maxDivide": 3,
+    "colorFilters": ["Azul", "Amarelo"],
+    "sizeFilters": ["M"]
+  },
+  {
+    "name": "Saia em Couro",
+    "image": "/images/img_3.png",
+    "price": 398,
+    "maxDivide": 5,
+    "colorFilters": ["Black"],
+    "sizeFilters": ["P", "M"]
+  },
+  {
+    "name": "Cardigan Tigre",
+    "image": "/images/img_4.png",
+    "price": 398,
+    "maxDivide": 3,
+    "colorFilters": ["Azul", "Amarelo"],
+    "sizeFilters": ["M"]
+  },
+  {
+    "name": "Cardigan Off White",
+    "image": "/images/img_4.png",
+    "price": 99,
+    "maxDivide": 5,
+    "colorFilters": ["Black"],
+    "sizeFilters": ["P", "M"]
+  },
+  {
+    "name": "Body Leopardo",
+    "image": "/images/img_5.png",
+    "price": 129,
+    "maxDivide": 3,
+    "colorFilters": ["Azul", "Amarelo"],
+    "sizeFilters": ["M"]
+  },
+  {
+    "name": "Casaco Pelos",
+    "image": "/images/img_6.png",
+    "price": 398,
+    "maxDivide": 5,
+    "colorFilters": ["Black"],
+    "sizeFilters": ["P", "M"]
+  },
+  {
+    "name": "Cropped Stripes",
+    "image": "/images/img_7.png",
+    "price": 120,
+    "maxDivide": 3,
+    "colorFilters": ["Azul", "Amarelo"],
+    "sizeFilters": ["M"]
+  },
+  {
+    "name": "Camisa transparente",
+    "image": "images/img_8.png",
+    "price": 398,
+    "maxDivide": 5,
+    "colorFilters": ["Black"],
+    "sizeFilters": ["P", "M"]
+  },
+  {
+    "name": "Pochete Clutch",
+    "image": "/images/img_9.png",
+    "price": 99,
+    "maxDivide": 5,
+    "colorFilters": ["Black"],
+    "sizeFilters": ["P", "M"]
+  }
+]

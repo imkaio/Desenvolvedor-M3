@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState }  from 'react';
 import './App.scss';
+import Header from './components/header'
+import ColorFilters from './components/filters/colorFilter'
+import SizeFilters from './components/filters/sizeFilter'
+import PriceFilters from './components/filters/priceFilter'
+import Products from './components/products'
+import Footer from './components/footer'
+
 
 function App() {
+
+    const [color, setColor] = useState()
+    const [size, setSize] = useState()
+    const [price, setPrice] = useState()
+
+    const colorFilter = (value) => {
+        setColor(value === color ? null : value)
+    }
+    const sizeFilter = (value) => {
+        setSize(value === size ? null : value)
+    }
+    const priceFilter = (value) => {
+        setPrice(value === price ? null : value)
+        console.log('hi')
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <Header />
+
+          <div className="container">
+              <section className="main">
+                  <div id="filtro">
+                    <ColorFilters onChange={colorFilter}  />
+                    <SizeFilters onChange={sizeFilter} />
+                    <PriceFilters onChange={priceFilter} />
+                  </div>
+                  <Products color={color} size={size} price={price}/>
+              </section>
+          </div>
+          <Footer />
+      </div>
   );
 }
 

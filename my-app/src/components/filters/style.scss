@@ -1,0 +1,74 @@
+@import '../../App.scss';
+
+#filtro {
+  -webkit-flex: 1 6 30%;
+  flex: 1 6 30%;
+  -webkit-order: 1;
+  order: 1;
+
+  .filtro__box {
+    width: 100%;
+    padding: 15px;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    .filtro__box-titulo {
+      width: 100%;
+      font-size: 16px;
+      font-weight: $regular;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .filtro__box-opcoes {
+      width: 100%;
+
+      ul li {
+        margin-top: 5px;
+        font-size: 14px;
+        &:first-child {margin-top:0px}
+
+        input.filtro__input-custom {
+          position: absolute;
+          opacity: 0;
+
+          & + label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+          }
+          & + label:before {
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #dddddd;
+          }
+          &:hover + label:before{
+            background: $corPrincipal;
+          }
+          &:disabled + label {
+            cursor: auto;
+          }
+          &:checked + label:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            background: $corPrincipal;
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,34 +1,75 @@
-.App {
-  text-align: center;
+/************************
+----- resets
+************************/
+* { padding: 0; margin: 0;}
+ul li {list-style: none; padding:0; margin: 0;}
+a { text-decoration: none; }
+input, textarea, button {outline:none}
 
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-    background: pink;
+
+/************************
+----- fonts
+************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+
+/************************
+----- Variaveis
+************************/
+$corPrincipal: #00c0ee;
+
+$regular: 400;
+$semi: 600;
+$bold: 700;
+
+
+/************************
+----- css geral
+************************/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
+
+/************************
+----- Layout
+************************/
+html, body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.main {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
