@@ -31,6 +31,7 @@ function App() {
 
     return (
         <div>
+            <div className="geral">
             <Header />
 
             <div className="container">
@@ -42,8 +43,11 @@ function App() {
                     </div>
                     <Products color={color} size={size} price={price}/>
                 </section>
+
             </div>
+
             <Footer />
+            </div>
         </div>
     )
 }

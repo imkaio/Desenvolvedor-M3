@@ -15,14 +15,14 @@ function SizeFilters({ onChange }) {
                 TAMANHOS
             </div>
 
-            <div className="filtro__box-opcoes">
-                <ul>
+            <div className="filtro__box-opcoes ">
+                <ul className="forSize">
                     {filters.map((filter, index) => (
                         <li
                             key={filter}
                             className={active === index ? 'filtro__box-opcao--ativa' : ''}
                         >
-                            <div onClick={handleChange(index, filter)}>{filter}</div>
+                            <div className="opcaoTamanho" onClick={handleChange(index, filter)}>{filter}</div>
                         </li>
                     ))}
                 </ul>

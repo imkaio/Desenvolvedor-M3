@@ -3,9 +3,11 @@ import './style.scss'
 
 function Footer() {
     return (
-        <footer>
-            a
-        </footer>
+        <div className="footer">
+            <p>
+                Agência M3 - Agência de Performance Digital
+            </p>
+        </div>
     )
 }
 

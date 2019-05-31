@@ -1,1 +1,20 @@
 @import '../../App.scss';
+
+.footer {
+  width: 100%;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  margin-bottom: -150px;
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+}

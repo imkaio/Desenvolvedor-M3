@@ -45,7 +45,7 @@ function Products({ color, size, price }) {
                                 </div>
     
                                 <div className="produtos__item--info--preco">
-                                    {product.price}
+                                    {product.price},00
                                     <span>ou 3x de R$ 9,33</span>
                                 </div>
     
