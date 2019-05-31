@@ -4,7 +4,7 @@
     "image": "/images/img_2.png",
     "price": 28,
     "maxDivide": 3,
-    "colorFilters": ["Azul", "Amarelo"],
+    "colorFilters": ["Cinza"],
     "sizeFilters": ["M"]
   },
   {
@@ -12,7 +12,7 @@
     "image": "/images/img_3.png",
     "price": 398,
     "maxDivide": 5,
-    "colorFilters": ["Black"],
+    "colorFilters": ["Laranja"],
     "sizeFilters": ["P", "M"]
   },
   {
@@ -20,7 +20,7 @@
     "image": "/images/img_4.png",
     "price": 398,
     "maxDivide": 3,
-    "colorFilters": ["Azul", "Amarelo"],
+    "colorFilters": ["Branco", "Laranja"],
     "sizeFilters": ["M"]
   },
   {
@@ -28,7 +28,7 @@
     "image": "/images/img_4.png",
     "price": 99,
     "maxDivide": 5,
-    "colorFilters": ["Black"],
+    "colorFilters": ["Branco"],
     "sizeFilters": ["P", "M"]
   },
   {
@@ -36,7 +36,7 @@
     "image": "/images/img_5.png",
     "price": 129,
     "maxDivide": 3,
-    "colorFilters": ["Azul", "Amarelo"],
+    "colorFilters": ["Branoc"],
     "sizeFilters": ["M"]
   },
   {
@@ -44,7 +44,7 @@
     "image": "/images/img_6.png",
     "price": 398,
     "maxDivide": 5,
-    "colorFilters": ["Black"],
+    "colorFilters": ["Laranja"],
     "sizeFilters": ["P", "M"]
   },
   {
@@ -52,15 +52,15 @@
     "image": "/images/img_7.png",
     "price": 120,
     "maxDivide": 3,
-    "colorFilters": ["Azul", "Amarelo"],
+    "colorFilters": ["Laranja", "Amarelo"],
     "sizeFilters": ["M"]
   },
   {
     "name": "Camisa transparente",
-    "image": "images/img_8.png",
+    "image": "/images/img_8.png",
     "price": 398,
     "maxDivide": 5,
-    "colorFilters": ["Black"],
+    "colorFilters": ["Laranja"],
     "sizeFilters": ["P", "M"]
   },
   {
@@ -68,7 +68,7 @@
     "image": "/images/img_9.png",
     "price": 99,
     "maxDivide": 5,
-    "colorFilters": ["Black"],
-    "sizeFilters": ["P", "M"]
+    "colorFilters": ["Laranja"],
+    "sizeFilters": ["GG"]
   }
 ]

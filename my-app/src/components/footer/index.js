@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
 import './style.scss'
 
-const Footer = () => (
-    <footer>
-        a
-    </footer>
-);
+function Footer() {
+    return (
+        <footer>
+            a
+        </footer>
+    )
+}
 
-export default Footer;
+export default Footer
 

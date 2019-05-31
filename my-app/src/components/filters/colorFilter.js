@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 import './style.scss'
 
-const ColorFilters = (props) => {
+function ColorFilters({ onChange }) {
     const filters = ["Amarelo", "Azul", "Branco", "Cinza", "Laranja"]
     const handleChange = (e) => {
-        return props.onChange(e.target.value);
+        return onChange(e.target.value)
     }
 
     return (
@@ -30,8 +30,7 @@ const ColorFilters = (props) => {
                 </ul>
             </div>
         </div>
-
     )
-};
+}
 
-export default ColorFilters;
+export default ColorFilters

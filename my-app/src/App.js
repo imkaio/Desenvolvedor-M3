@@ -1,47 +1,51 @@
-import React, { useState }  from 'react';
-import './App.scss';
+import React, { useState }  from 'react'
 import Header from './components/header'
 import ColorFilters from './components/filters/colorFilter'
 import SizeFilters from './components/filters/sizeFilter'
 import PriceFilters from './components/filters/priceFilter'
 import Products from './components/products'
 import Footer from './components/footer'
+import './App.scss'
 
 
 function App() {
+    const [color, setColor] = useState([])
+    const [size, setSize] = useState([])
+    const [price, setPrice] = useState([])
 
-    const [color, setColor] = useState()
-    const [size, setSize] = useState()
-    const [price, setPrice] = useState()
+    const filter = (state, setState) => value => {
+        if (value.id) {
+            return setState(
+                state.find(item => item.id === value.id)
+                    ? state.filter(item => item.id !== value.id)
+                    : [...state, value]
+            )
+        }
 
-    const colorFilter = (value) => {
-        setColor(value === color ? null : value)
+        return setState(
+            state.includes(value)
+                ? state.filter(item => item !== value)
+                : [...state, value]
+            )
     }
-    const sizeFilter = (value) => {
-        setSize(value === size ? null : value)
-    }
-    const priceFilter = (value) => {
-        setPrice(value === price ? null : value)
-        console.log('hi')
-    }
 
-  return (
-      <div>
-          <Header />
+    return (
+        <div>
+            <Header />
 
-          <div className="container">
-              <section className="main">
-                  <div id="filtro">
-                    <ColorFilters onChange={colorFilter}  />
-                    <SizeFilters onChange={sizeFilter} />
-                    <PriceFilters onChange={priceFilter} />
-                  </div>
-                  <Products color={color} size={size} price={price}/>
-              </section>
-          </div>
-          <Footer />
-      </div>
-  );
+            <div className="container">
+                <section className="main">
+                    <div id="filtro">
+                        <ColorFilters onChange={filter(color, setColor)}  />
+                        <SizeFilters onChange={filter(size, setSize)} />
+                        <PriceFilters onChange={filter(price, setPrice)} />
+                    </div>
+                    <Products color={color} size={size} price={price}/>
+                </section>
+            </div>
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App
